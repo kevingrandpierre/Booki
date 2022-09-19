@@ -1,0 +1,525 @@
+/* POLICE */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* COLORS */
+:root {
+  --blue: #0065fc;
+  --light-blue: #deebff;
+  --grey: #f2f2f2;
+}
+
+/* ALL STYLES */
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", "sans-serif";
+}
+
+.activate {
+  color: var(--blue);
+}
+
+.desactivate {
+  color: rgb(180, 180, 180);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+nav a {
+  padding: 30px;
+  border: 3px solid transparent;
+}
+
+nav a:hover {
+  border-top-color: var(--blue);
+}
+
+#logo {
+  margin-right: auto;
+  padding: 0 30px;
+  height: 50px;
+  width: auto;
+}
+
+.signup {
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.sub-nav {
+  display: flex;
+}
+
+.sub-nav a {
+  text-align: center;
+
+}
+
+.sub-nav a:hover {
+  color: var(--blue);
+}
+
+
+/* BODY */
+.title {
+  padding: 0 30px;
+}
+
+.title h1,
+.title p {
+  margin-bottom: 15px;
+}
+
+
+/* SEARCH-FORM */
+.search-form {
+  display: flex;
+  align-items: stretch;
+}
+
+.search-form *,
+.search-form input::placeholder {
+  padding: 15px;
+  font-size: 20px;
+  font-size: 17px;
+}
+
+.search-form i.fa-map-marker-alt {
+  background-color: var(--grey);
+  border-radius: 12px 0 0 12px;
+}
+
+.search-form i.fa-search {
+  display: none;
+}
+
+.search-form input {
+  flex-basis: 200px;
+  border: 1px solid var(--grey);
+}
+
+.search-form button {
+  background: var(--blue);
+  color: white;
+  font-weight: bold;
+  border-radius: 0 12px 12px 0;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* FILTERS */
+.filter-list {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter {
+  border: 2px solid var(--grey);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 600ms ease-out;
+}
+
+.filter:hover {
+  background: var(--light-blue);
+  border: none;
+}
+
+.filter i {
+  color: var(--blue);
+  background: var(--light-blue);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.filter p {
+  font-weight: bold;
+  padding: 15px;
+  margin: -3px;
+}
+
+
+/* INFO */
+.info i {
+  margin-right: 20px;
+  color: var(--blue);
+  border: 1px solid var(--grey);
+  border-radius: 50%;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+
+/* LODGING-LIST */
+#lodging {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.city,
+.popular {
+  background: var(--grey);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.city {
+  flex-basis: 66%;
+  margin-left: 20px;
+}
+
+.popular {
+  flex-basis: 33%;
+}
+
+
+/* CITY */
+.city {
+  padding: 0 60px;
+}
+
+.city-lodging {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  height: 120px;
+}
+
+.card-lodging {
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 8px;
+  box-shadow: 0 0 15px #0000002e;
+  flex-grow: 1;
+  flex-basis: 30%;
+}
+
+.card-lodging img {
+  border-radius: 25px 25px 0 0;
+  height: 150px;
+  width: 100%;
+}
+
+.card-lodging h4,
+.card-lodging p {
+  margin: 5px;
+}
+
+.card-lodging i {
+  margin: 5px 0 0 5px;
+}
+
+.show-more {
+  margin-top: 10px;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+
+/* POPULAR */
+.popular {
+  margin-right: 20px;
+  height: 120%;
+}
+
+.popular_title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.popular_title i {
+  cursor: pointer;
+}
+
+.card-popular {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 40px;
+  border-radius: 25px;
+  box-shadow: 0 0 15px #0000002e;
+}
+
+.description-card-popular {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+.card-popular p {
+  margin-top: -10px;
+}
+
+.card-popular .stars {
+  margin-top: 30px;
+}
+
+.card-popular img {
+  padding: 7px;
+  height: 150px;
+  max-width: 200px;
+  width: 100%;
+  border-radius: 25px 0 0 25px;
+}
+
+
+/* ACTIVITY */
+#bloc_activity {
+  display: flex;
+  margin: 80px 0;
+}
+
+#activity {
+  width: 100%;
+  margin-left: 25px;
+}
+
+/* #activity h2 {
+  font-size: 22px;
+  font-weight: 700;
+} */
+
+.div_activity {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 500px;
+}
+
+/*Images et textes actvités*/
+.activity_card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 5px;
+}
+
+.activity_card a {
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 0 30px rgba(194, 194, 194, 0.8);
+  text-decoration: none;
+  width: 380px;
+  max-height: 100%;
+}
+
+/* Le vieux port et Parc National des Calanques*/
+.activity_image_card img {
+  object-fit: cover;
+  width: 100%;
+  height: 410px;
+  border-radius: 10px 10px 0 0;
+}
+
+.description_activity_card {
+  display: flex;
+  flex-direction: column;
+}
+
+.description_activity_card h4 {
+  font-size: 14px;
+  margin: 0;
+  padding: 10px;
+}
+
+/*Fort de Pomegues & Parc Longchamp*/
+.activity_image_card2 img,
+.activity_image_card6 img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+
+/*Iles du Frioul & Notre-Dame-De-La-Garde*/
+.activity_image_card3 img,
+.activity_image_card5 img {
+  object-fit: cover;
+  width: 100%;
+  height: 130px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* FOOTER */
+.link {
+  background: var(--grey);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 0 20px;
+}
+
+.link h5 {
+  font-size: medium;
+}
+
+.link p {
+  cursor: pointer;
+}
+
+/* RESPONSIVE TABLETTE */
+@media screen and (max-width: 992px) {
+
+  /* NAVBAR */
+  .sub-nav {
+    order: 1;
+    flex-basis: 100%;
+  }
+
+  .sub-nav a {
+    flex-basis: 50%;
+    border-bottom: 3px solid var(--grey);
+  }
+
+  .sub-nav a:hover {
+    border-bottom-color: var(--blue);
+    border-top-color: transparent;
+  }
+
+  /* SEARCH */
+  .search-form span {
+    display: none;
+  }
+
+  .search-form i.fa-search {
+    display: inline;
+  }
+
+  /* FILTERS */
+  .filter-list {
+    flex-wrap: wrap;
+  }
+
+  /* CITY */
+  #lodging {
+    flex-direction: column;
+  }
+
+  .popular {
+    order: -1;
+  }
+
+  .city {
+    display: flex;
+    flex-direction: column;
+    margin: inherit;
+    background: inherit;
+  }
+  #bloc_activity{
+    margin-top: 100px;
+  }
+ #activity{
+  margin-bottom: -600px;
+
+ }
+  #bloc_activity h3{
+    margin-top: 400px;
+    margin-bottom: 0;
+    margin-left: 30px;
+  }
+.div_activity{
+  max-height: 50%;
+  width: 100%;
+  align-items: center;
+}
+
+
+  .link{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 768px)  {
+  
+  .city-lodging{
+    display: inline-block;
+    align-items: center;
+    /* margin-left: 30px; */
+  }
+  .card-lodging{
+    margin-bottom: 40px;
+    /* width: 500px; */
+    padding: inherit;
+  }
+  #lodging{
+    display: flex;
+  }
+
+  #bloc_activity{
+    display: inline-block;
+    flex-direction: column;
+    margin-top: 1200px;
+    /* margin-left: 40px; */
+    margin-right: auto;
+  
+  }
+  .activity_card img{
+    width: 516px;
+    height: 230px;
+  }
+  .activity_card a{
+    width: inherit;
+  }
+  .description_activity_card{
+    display: inline-flex;
+    width: 500px;
+    height: 70px;
+    padding-top: 10px;
+    padding-left: 25px;
+  }
+  
+ .link{
+  margin-top: 600px;
+  display: flex;
+  align-items: flex-start;
+  
+ }
+ .about,
+ .link_lodging,
+ .help{
+  margin-left: 30px;
+ }
+
+
+
+
+
+
+
+
+}
