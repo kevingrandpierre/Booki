@@ -472,8 +472,7 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
-margin-top: -300px;
+  margin-top: -300px;
   height: 400px;
 }
 
@@ -530,6 +529,8 @@ margin-top: -300px;
  .link{
   margin-top: 650px;
   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
   align-items: flex-start;
   
  }
@@ -539,8 +540,10 @@ margin-top: -300px;
   margin-left: 30px;
  }
   .link{
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
+    height: 500px;
   }
 
 
