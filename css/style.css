@@ -15,6 +15,10 @@
   font-family: "Raleway", "sans-serif";
 }
 
+* img{
+  position: relative;
+}
+
 .activate {
   color: var(--blue);
 }
@@ -316,7 +320,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  max-height: 500px;
+  height: 500px;
 }
 
 /*Images et textes actvités*/
@@ -401,7 +405,9 @@ nav a:hover {
 
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width: 992px) {
-
+  body{
+    height: 3500px;
+  }
   /* NAVBAR */
   .sub-nav {
     order: 1;
@@ -434,7 +440,6 @@ nav a:hover {
 
   /* CITY */
   #lodging {
-    border: 2px solid red;
     flex-direction: column;
     height: 1350px;
     width: 100%;
@@ -455,17 +460,17 @@ nav a:hover {
     background: inherit;
     max-width: 992px;
   }
-
-
-  #bloc_activity h3{
-    margin-bottom: 0;
-    margin-left: 30px;
-  }
-  .div_activity{
-    max-height: 50%;
-    width: 100%;
-    align-items: center;
-  }
+  #bloc_activity {
+    height: 40%;
+    }
+    .div_activity {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      height: 100%;
+      max-height: 80%;
+    }
 
   .link{
     display: flex;
@@ -479,7 +484,9 @@ nav a:hover {
 
 
 @media screen and (max-width: 768px)  {
-
+  body{
+    height: 4000px;
+  }
   .city-lodging{
     display: inline-block;
     align-items: center;
@@ -487,6 +494,8 @@ nav a:hover {
   .card-lodging{
     margin-bottom: 40px;
     padding: inherit;
+    width: 630px;
+
   }
   #lodging{
     display: flex;
@@ -495,25 +504,27 @@ nav a:hover {
   #bloc_activity{
     display: inline-block;
     flex-direction: column;
-    margin-top: 1350px;
-    margin-right: auto;
+    margin-top: 1450px;
+    margin-left: 0;
   
   }
   .activity_card,
   .city-lodging{
     height: 300px;
-    width: 534px;
+    width: 630px;
   }
     .activity_image_card img,
     .activity_image_card2 img,
     .activity_image_card3 img,
     .activity_image_card5 img,
-    .activity_image_card6 img,
-    .card-lodging img{
+    .activity_image_card6 img{
         height: 220px;
-        width: 534px;
+        width: 630px;
     }
-
+  .card-lodging img{
+    height: 220px;
+    width: 630px;
+  }
   .activity_card a{
     width: inherit;
   }
@@ -524,7 +535,10 @@ nav a:hover {
     padding-top: 10px;
     padding-left: 25px;
   }
-  
+
+  .div_activity{
+    margin-left: -30px;
+  }
  .link{
   margin-top: 650px;
   display: flex;
