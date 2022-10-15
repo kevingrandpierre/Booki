@@ -315,6 +315,7 @@ nav a:hover {
 #activity {
   width: 100%;
   margin-left: 25px;
+  margin-right: 15px;
 }
 
 .div_activity {
@@ -403,37 +404,7 @@ nav a:hover {
 .link p {
   cursor: pointer;
 }
-/*@media screen  and (max-width: 1477px) {
-  #bloc_activity {
-    height: 30%;
-    width: 100%;
-    margin-bottom: 80px;
-  }
-  #activity {
-    width: 100%;
-  }
-  #activity h3{
-    margin-left: 25px;
-  }
-  .div_activity {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    !* height: 100%;*!
-    max-height: 40%;
-  }
-  .activity_image_card img,
-  .activity_image_card2 img,
-  .activity_image_card3 img,
-  .activity_image_card5 img,
-  .activity_image_card6 img {
-    height: 200px;
-  }
 
-
-}*/
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width: 992px) {
   body{
