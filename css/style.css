@@ -1,13 +1,13 @@
 /* POLICE */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
-
 /* COLORS */
 :root {
   --blue: #0065fc;
   --light-blue: #deebff;
   --grey: #f2f2f2;
 }
+
 
 /* ALL STYLES */
 * {
@@ -101,7 +101,6 @@ nav a:hover {
 .search-form input::placeholder {
   padding: 15px;
   font-size: 20px;
-  font-size: 17px;
 }
 
 .search-form i.fa-map-marker-alt {
@@ -150,7 +149,7 @@ nav a:hover {
 .filter:hover {
   background: var(--light-blue);
   transform: scale(1.1);
-  border: none;
+  border: 2px solid var(--light-blue);
 }
 
 .filter i {
@@ -309,6 +308,8 @@ nav a:hover {
 /* ACTIVITY */
 #bloc_activity {
   display: flex;
+  width: 100%;
+  margin-bottom: 150px;
 }
 
 #activity {
@@ -338,16 +339,8 @@ nav a:hover {
   color: #000000;
   box-shadow: 0 0 30px rgba(194, 194, 194, 0.8);
   text-decoration: none;
-  width: 380px;
+  width: 350px;
   max-height: 100%;
-}
-
-/* Le vieux port et Parc National des Calanques*/
-.activity_image_card img {
-  object-fit: cover;
-  width: 100%;
-  height: 410px;
-  border-radius: 10px 10px 0 0;
 }
 
 .description_activity_card {
@@ -359,6 +352,14 @@ nav a:hover {
   font-size: 14px;
   margin: 0;
   padding: 10px;
+}
+
+/* Le vieux port et Parc National des Calanques*/
+.activity_image_card img {
+  object-fit: cover;
+  width: 100%;
+  height: 410px;
+  border-radius: 10px 10px 0 0;
 }
 
 /* Fort de Pomegues & Parc Longchamp */
@@ -402,11 +403,41 @@ nav a:hover {
 .link p {
   cursor: pointer;
 }
+/*@media screen  and (max-width: 1477px) {
+  #bloc_activity {
+    height: 30%;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  #activity {
+    width: 100%;
+  }
+  #activity h3{
+    margin-left: 25px;
+  }
+  .div_activity {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    !* height: 100%;*!
+    max-height: 40%;
+  }
+  .activity_image_card img,
+  .activity_image_card2 img,
+  .activity_image_card3 img,
+  .activity_image_card5 img,
+  .activity_image_card6 img {
+    height: 200px;
+  }
 
+
+}*/
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width: 992px) {
   body{
-    height: 3500px;
+    height: 3000px;
   }
   /* NAVBAR */
   .sub-nav {
@@ -461,15 +492,31 @@ nav a:hover {
     max-width: 992px;
   }
   #bloc_activity {
-    height: 40%;
+    height: 30%;
+    width: 100%;
+    margin-bottom: 80px;
     }
+  #activity {
+    width: 100%;
+  }
+  #activity h3{
+    margin-left: 25px;
+  }
     .div_activity {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      align-items: center;
       justify-content: space-around;
-      height: 100%;
-      max-height: 80%;
+     /* height: 100%;*/
+      max-height: 40%;
+    }
+  .activity_image_card img,
+    .activity_image_card2 img,
+    .activity_image_card3 img,
+    .activity_image_card5 img,
+    .activity_image_card6 img {
+      height: 200px;
     }
 
   .link{
@@ -477,7 +524,7 @@ nav a:hover {
     flex-direction: row;
     flex-wrap: wrap;
    /* margin-top: -300px;*/
-    height: 400px;
+    height: 300px;
 }
 
 }
@@ -485,7 +532,7 @@ nav a:hover {
 
 @media screen and (max-width: 768px)  {
   body{
-    height: 4000px;
+    height: 4500px;
   }
   .city-lodging{
     display: inline-block;
@@ -504,8 +551,9 @@ nav a:hover {
   #bloc_activity{
     display: inline-block;
     flex-direction: column;
-    margin-top: 1450px;
-    margin-left: 0;
+    margin: 1450px 0 150px 0;
+   /* margin-top: 1450px;
+    margin-left: 0;*/
   
   }
   .activity_card,
