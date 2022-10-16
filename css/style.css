@@ -8,7 +8,6 @@
   --grey: #f2f2f2;
 }
 
-
 /* ALL STYLES */
 * {
   box-sizing: border-box;
@@ -192,7 +191,7 @@ nav a:hover {
 .popular {
   background: var(--grey);
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 25px;
 }
 
 .city {
@@ -323,6 +322,7 @@ nav a:hover {
   flex-wrap: wrap;
   flex-direction: column;
   height: 500px;
+  width: 100%;
 }
 
 /*Images et textes actvités*/
@@ -331,16 +331,16 @@ nav a:hover {
   flex-wrap: wrap;
   margin: 20px 5px;
   transition: all 300ms ;
+  width: 23%;
 }
 
 .activity_card a {
-  border-radius: 10px;
-  border: none;
+  border-radius: 25px;
   background-color: #ffffff;
   color: #000000;
   box-shadow: 0 0 30px rgba(194, 194, 194, 0.8);
   text-decoration: none;
-  width: 350px;
+  width: 100%;
   max-height: 100%;
 }
 
@@ -408,7 +408,7 @@ nav a:hover {
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width: 992px) {
   body{
-    height: 3000px;
+    height: 2100px;
   }
   /* NAVBAR */
   .sub-nav {
@@ -465,11 +465,9 @@ nav a:hover {
   #bloc_activity {
     height: 30%;
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 250px;
     }
-  #activity {
-    width: 100%;
-  }
+
   #activity h3{
     margin-left: 25px;
   }
@@ -479,8 +477,12 @@ nav a:hover {
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-around;
-     /* height: 100%;*/
       max-height: 40%;
+      gap: 20px;
+    }
+    .activity_card{
+      width: 40%;
+      margin: 0 5px;
     }
   .activity_image_card img,
     .activity_image_card2 img,
@@ -494,8 +496,6 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-   /* margin-top: -300px;*/
-    height: 300px;
 }
 
 }
@@ -522,9 +522,8 @@ nav a:hover {
   #bloc_activity{
     display: inline-block;
     flex-direction: column;
-    margin: 1450px 0 150px 0;
-   /* margin-top: 1450px;
-    margin-left: 0;*/
+    margin: 1450px 0 150px 10px;
+
   
   }
   .activity_card,
