@@ -513,7 +513,9 @@ nav a:hover {
     margin-bottom: 40px;
     padding: inherit;
     width: 630px;
-
+  }
+  .card-lodging i{
+    margin-bottom: 15px;
   }
   #lodging{
     display: flex;
@@ -522,7 +524,7 @@ nav a:hover {
   #bloc_activity{
     display: inline-block;
     flex-direction: column;
-    margin: 1450px 0 150px 10px;
+    margin: 1500px 0 150px 10px;
 
   
   }
