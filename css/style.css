@@ -410,6 +410,9 @@ nav a:hover {
   body{
     height: 2100px;
   }
+  #logo{
+    margin: 5%;
+  }
   /* NAVBAR */
   .sub-nav {
     order: 1;
@@ -452,7 +455,8 @@ nav a:hover {
     margin-left: 15px;
   }
   .card-popular{
-    margin-left: 35px;
+    width: 100%;
+    background: white;
   }
 
   .city {
@@ -469,7 +473,7 @@ nav a:hover {
     }
 
   #activity h3{
-    margin-left: 25px;
+    margin-left: 4%;
   }
     .div_activity {
       display: flex;
@@ -505,14 +509,31 @@ nav a:hover {
   body{
     height: 4500px;
   }
+  #logo{
+    top: 10px;
+    right: 50%;
+    left: 50%;
+    margin-right: 88%;
+  }
+  .popular{
+    margin: 0;
+    border-radius: inherit;
+  }
+  .city{
+    padding: inherit;
+  }
+  .city h3{
+    margin-left: 7%;
+  }
   .city-lodging{
     display: inline-block;
     align-items: center;
+    margin-left: 5%;
   }
   .card-lodging{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding: inherit;
-    width: 630px;
+    width: 96%;
   }
   .card-lodging i{
     margin-bottom: 15px;
@@ -525,13 +546,14 @@ nav a:hover {
     display: inline-block;
     flex-direction: column;
     margin: 1500px 0 150px 10px;
-
-  
   }
-  .activity_card,
-  .city-lodging{
+    #activity h3{
+        margin: 0 0 20px ;
+    }
+  .activity_card{
     height: 300px;
-    width: 630px;
+    width: 95%;
+    margin-left: 5%;
   }
     .activity_image_card img,
     .activity_image_card2 img,
@@ -539,11 +561,11 @@ nav a:hover {
     .activity_image_card5 img,
     .activity_image_card6 img{
         height: 220px;
-        width: 630px;
+        width: 100%;
     }
   .card-lodging img{
     height: 220px;
-    width: 630px;
+    width: 100%;
   }
   .activity_card a{
     width: inherit;
