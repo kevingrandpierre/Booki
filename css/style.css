@@ -411,7 +411,7 @@ nav a:hover {
     height: 2100px;
   }
   #logo{
-    margin: 5%;
+    margin: 3% 41% 1% 43%;
   }
   /* NAVBAR */
   .sub-nav {
@@ -545,15 +545,14 @@ nav a:hover {
   #bloc_activity{
     display: inline-block;
     flex-direction: column;
-    margin: 1500px 0 150px 10px;
+    margin: 1500px 0 150px 20px;
   }
     #activity h3{
         margin: 0 0 20px ;
     }
   .activity_card{
     height: 300px;
-    width: 95%;
-    margin-left: 5%;
+    width: 96%;
   }
     .activity_image_card img,
     .activity_image_card2 img,
