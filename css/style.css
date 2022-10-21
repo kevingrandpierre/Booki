@@ -296,33 +296,31 @@ nav {
 
 
 /* ACTIVITY */
+#bloc_activity{
+  margin: 80px 30px;
+}
 #activity {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
-
-/*#activity {
-  width: 100%;
-  margin-left: 25px;
-  margin-right: 15px;
-}*/
 
 .div_activity {
   display: flex;
-/*  flex-wrap: wrap;*/
   flex-direction: row;
-/*  height: 25%;
-  width: 100%;*/
+  gap: 30px;
+}
+.activity_card_content2{
+
+  width: 100%;
 }
 
 /*Images et textes actvités*/
-.activity_card {
-/*  display: flex;
-  flex-wrap: wrap;*/
+.activity_card,
+.activity_card2,
+.activity_card3{
   margin: 20px 5px;
   transition: all 300ms ;
-  width: 23%;
+  width: 100%;
 }
 
 .activity_card a {
@@ -375,6 +373,10 @@ nav {
 .card-lodging:hover,
 .card-popular:hover,
 .activity_card:hover {
+  transform: scale(1.1);
+}
+
+{
   transform: scale(1.05);
 }
 
