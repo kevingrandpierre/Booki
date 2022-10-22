@@ -317,13 +317,14 @@ nav a:hover {
   width: 100%;
   margin-left: 25px;
   margin-right: 15px;
+  height: 600px;
 }
 
 .div_activity {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 25%;
+  height: 100%;
   width: 100%;
 }
 
@@ -506,7 +507,7 @@ nav a:hover {
 }
 
 
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 768px)   {
 
   #logo{
     margin: 10% 30%;
@@ -530,6 +531,7 @@ nav a:hover {
     display: inline-block;
     align-items: center;
   }
+
   .card-lodging{
     margin-bottom: 30px;
     padding: inherit;
@@ -550,6 +552,7 @@ nav a:hover {
   }
   #activity{
     margin: inherit;
+    height: 100%;
   }
     #activity h2{
         margin: 0 20px;
@@ -589,8 +592,7 @@ nav a:hover {
   display: flex;
    flex-direction: column;
    flex-wrap: nowrap;
-  align-items: flex-start;
-  
+   padding: 30px;
  }
  .about,
  .link_lodging,
@@ -598,11 +600,7 @@ nav a:hover {
   margin-left: 30px;
  }
   .link{
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 500px;
+
   }
 
 }
