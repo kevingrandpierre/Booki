@@ -411,9 +411,7 @@ nav a:hover {
 
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width: 992px) {
-/*  body{
-    height: 2100px;
-  }*/
+
   #logo{
     margin: 3% 41% 1% 43%;
   }
@@ -600,8 +598,5 @@ nav a:hover {
  .help{
   margin-left: 30px;
  }
-  .link{
-
-  }
 
 }
