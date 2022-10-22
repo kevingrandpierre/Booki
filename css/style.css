@@ -309,21 +309,27 @@ nav {
   flex-direction: row;
   gap: 30px;
 }
-.activity_card_content2{
+/*.activity_card_content2{
 
   width: 100%;
-}
+}*/
 
 /*Images et textes actvités*/
-.activity_card,
-.activity_card2,
-.activity_card3{
+.activity_card/*,
+.activity_card2*/{
   margin: 20px 5px;
   transition: all 300ms ;
-  width: 100%;
+  width: 60%;
+  display: flex;
+}
+.activity_card2{
+  display: flex;
+  width: 50%;
 }
 
-.activity_card a {
+
+.activity_card a,
+.activity_card2 a{
   border-radius: 25px;
   background-color: #ffffff;
   color: #000000;
@@ -372,7 +378,8 @@ nav {
 /* Hover all cards */
 .card-lodging:hover,
 .card-popular:hover,
-.activity_card:hover {
+.activity_card:hover,
+.activity_card2:hover{
   transform: scale(1.1);
 }
 
@@ -469,12 +476,14 @@ nav {
   }
     .div_activity {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-around;
       max-height: 40%;
       gap: 20px;
+      width: 100%;
+      margin-top: 10%;
     }
     .activity_card{
       width: 40%;
